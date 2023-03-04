@@ -1,0 +1,25 @@
+name: Gulp
+on:
+  push:
+    paths:
+      - 'dev/**'
+
+jobs:
+  gulp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: npm install
+      - run: gulp
+      - name: Commit
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git pull origin master
+          git add assets/
+          git commit -m "[Gulp] ${{ github.event.commits.message }}"
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          branch: ${{ github.ref }}
