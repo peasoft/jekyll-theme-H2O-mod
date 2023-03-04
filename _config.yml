@@ -12,8 +12,8 @@ baseurl: ''
 
 # Navigation links
 nav:
-  home: '/'
-  tags: '/tags.html'
+  在线小工具: '/tools/'
+  文章分类: '/tags.html'
 
 # Footer
 footer:
@@ -53,7 +53,7 @@ postPatterns: 'circuitBoard'
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
   github: 'https://github.com/peasoft'
-  email: 'luliucheng100@outlook.com'
+  email: 'mailto:luliucheng100@outlook.com'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
@@ -62,7 +62,7 @@ recommend-condition-size: 12 # a tag will be recommended if the size of it is mo
 # Build settings
 paginate: 6
 paginate_path: 'page:num'
-exclude: ['README.md','dl','tools','special']
+exclude: ['README.md']
 
 # Markdown
 markdown: kramdown

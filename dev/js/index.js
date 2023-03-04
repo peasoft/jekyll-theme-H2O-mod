@@ -102,7 +102,7 @@ $(document).ready(function(){
     $('.read-next-item section').each(function() {
         var n = $(this).height();
         var rn = $('.read-next-item').height();
-        $(this).css('margin-top', (rn - n) / 2 + 'px');
+        $(this).css('margin-top', (rn - n) / 4 + 'px');
         $(this).fadeIn();
     });
 
