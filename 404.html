@@ -1,0 +1,16 @@
+---
+layout: default
+description: "找不到页面"
+---
+
+{% include header.html %}
+
+<header class="g-banner np-banner {{ site.postPatterns | prepend: 'post-pattern-' }}" data-theme="{{ site.theme-color }}">
+    <div class="post-wrapper">
+        <h1>很抱歉，此页面不存在或已被删除！</h1>
+        <span class="subheading">{{ page.description }}</span>
+        <a href="{{ site.nav.home }}" class="btn">返回首页</a>
+    </div>
+</header>
+
+
