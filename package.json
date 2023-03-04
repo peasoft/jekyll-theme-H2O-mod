@@ -13,7 +13,8 @@
     "gulp-clean-css": "latest",
     "gulp-rename": "latest",
     "gulp-sass": "latest",
-    "gulp-uglify": "latest"
+    "gulp-uglify": "latest",
+    "sass": "latest"
   },
   "dependencies": {}
 }
