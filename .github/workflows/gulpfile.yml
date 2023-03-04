@@ -4,6 +4,8 @@ on:
     paths:
       - 'dev/**'
       - 'package.json'
+      - 'gulpfile.js'
+      - 'Gemfile'
       - '.github/workflows/**'
 
 jobs:
