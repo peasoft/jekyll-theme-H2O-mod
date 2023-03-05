@@ -22,10 +22,5 @@ gulp.task('sass', function(done){
     done();
 });
 
-gulp.task('watch', function(done){
-    gulp.watch('dev/sass/*.scss', ['sass']);
-    gulp.watch('dev/js/*.js', ['scripts']);
-    done();
-});
 
-gulp.task('default', gulp.series('scripts', 'sass', 'watch'));
+gulp.task('default', gulp.series('scripts', 'sass'));
