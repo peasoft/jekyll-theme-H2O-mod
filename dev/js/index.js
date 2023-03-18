@@ -1,4 +1,3 @@
-//*CI
 $(document).ready(function(){
     var nav = $('.g-nav');
 
