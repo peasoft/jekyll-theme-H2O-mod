@@ -165,7 +165,7 @@ a {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 .home-banner h2 {
-  padding-top: 190px;
+  padding-top: 130px;
   line-height: 38px;
   font-size: 42px;
   font-family: "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -935,7 +935,7 @@ a {
   text-align: center;
 }
 .np-banner h1 {
-  font-size: 86px;
+  font-size: 60px;
   letter-spacing: 4px;
   font-weight: normal;
   padding: 160px 0 20px;
@@ -1202,10 +1202,10 @@ a {
 }
 @media screen and (max-width: 500px) {
   .home-banner {
-    height: 400px;
+    height: 210px;
   }
   .home-banner h2 {
-    padding-top: 180px;
+    padding-top: 115px;
     font-size: 28px;
     line-height: 48px;
   }
@@ -1254,7 +1254,6 @@ a {
   }
   .post-header {
     padding: 0;
-    height: 360px;
   }
   .post-wrapper .post-tags {
     margin: 100px 0 8px;

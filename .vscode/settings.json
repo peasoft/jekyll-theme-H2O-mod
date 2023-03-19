@@ -1,0 +1,6 @@
+{
+    "search.exclude": {
+        "assets/": true,
+        "dev/sass/*.css": true
+    }
+}

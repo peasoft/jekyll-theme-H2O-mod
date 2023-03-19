@@ -12,7 +12,6 @@ baseurl: ''
 
 # Navigation links
 nav:
-  在线小工具: '/tools/'
   文章分类: '/tags.html'
 
 # Footer
@@ -33,7 +32,7 @@ nightMode: false
 
 # Comments 评论功能
 comments:
-  giscus: false
+  giscus: true
   giscus_script: '<script src="https://giscus.app/client.js" data-repo="peasoft/peasoft.github.io" data-repo-id="R_kgDOHk_dzQ" data-category="Talk" data-category-id="DIC_kwDOHk_dzc4CU9Nq" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="zh-CN" crossorigin="anonymous" async></script>'
 
 # MathJax 公式支持 by Ray-Eldath
@@ -62,7 +61,7 @@ recommend-condition-size: 12 # a tag will be recommended if the size of it is mo
 # Build settings
 paginate: 6
 paginate_path: 'page:num'
-exclude: ['node_modules', 'dev', 'package.json', 'README.md', 'Gemfile', 'LICENSE']
+exclude: ['node_modules', 'dev', 'Gemfile', 'gulpfile.js', 'LICENSE', 'package.json', 'README.md']
 
 # Markdown
 markdown: kramdown
