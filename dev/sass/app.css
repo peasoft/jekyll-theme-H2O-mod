@@ -610,7 +610,7 @@ a {
   margin-bottom: 12px;
 }
 .post-header .post-tags {
-  margin: 150px 0 16px;
+  margin: 100px 0 16px;
 }
 .post-header .post-tags .post-tag {
   display: inline-block;
@@ -689,13 +689,6 @@ a {
 
 .bgcolor-pink {
   background-color: #FC6794;
-}
-
-.post-no-cover {
-  height: 360px;
-}
-.post-no-cover .post-tags {
-  margin-top: 100px;
 }
 
 .post-pattern-circuitBoard {

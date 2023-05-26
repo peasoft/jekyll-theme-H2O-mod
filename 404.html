@@ -13,4 +13,10 @@ description: "找不到页面"
     </div>
 </header>
 
-
+<script>
+    if(!location.pathname.includes('.')){
+        if(!location.pathname.endsWith(".html")){
+            location.pathname += ".html"
+        }
+    }
+</script>
