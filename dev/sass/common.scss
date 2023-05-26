@@ -574,9 +574,9 @@
 .author-detail {
     position: relative;
     top: -35px;
-    .comment {
-        margin-bottom: 60px;
-    }
+    // .comment {
+    //     margin-bottom: 60px;
+    // }
 }
 
 .read-next {
@@ -587,7 +587,7 @@
 .read-next-item {
     position: relative;
     flex: 1;
-    height: 260px;
+    height: 170px;
     padding: 0;
     top: 0;
     background-color: #AAB4CA;
