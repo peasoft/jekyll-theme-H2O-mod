@@ -407,7 +407,7 @@
         margin-bottom: 12px;
     }
     .post-tags {
-        margin: 150px 0 16px;
+        margin: 100px 0 16px;
         .post-tag {
             @include tagStyle;
             color: #fff;
@@ -470,12 +470,12 @@
     background-color: $color-theme-pink;
 }
 
-.post-no-cover {
-    height: 360px;
-    .post-tags {
-        margin-top: 100px;
-    }
-}
+// .post-no-cover {
+//     height: 360px;
+//     .post-tags {
+//         margin-top: 100px;
+//     }
+// }
 
 .post-pattern-circuitBoard {
     @include postHeaderPattern('circuitBoard');
