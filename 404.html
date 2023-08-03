@@ -15,7 +15,7 @@ description: "找不到页面"
 
 <script>
     if(!location.pathname.includes('.')){
-        if(!location.pathname.endsWith(".html")){
+        if(!location.pathname.endsWith("/") && !location.pathname.endsWith(".html")){
             location.pathname += ".html"
         }
     }

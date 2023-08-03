@@ -1,0 +1,34 @@
+name: Publish GitHub Pages
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download theme
+        uses: actions/checkout@v3
+        with:
+          repository: peasoft/jekyll-theme-H2O-mod
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          path: _repo
+      - run: mv -f _repo/* .
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+      - run: bundle install
+      - run: jekyll build
+      - uses: actions/upload-pages-artifact@v1.0.7
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
