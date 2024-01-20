@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div
+    class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}"
+    data-theme="{{ site.theme-color }}"
+    style="{% if page.header-img %}background: url({{ page.header-img | relative_url }}) no-repeat center center; background-size: cover;{% endif %}"
+>
+    <h2>
+        <form class="search-card" style="display: block;">
+            <input id="search_input" type="text" placeholder="输入搜索词，按回车搜索{% if site.search %}全文{% endif %}..." autocomplete="off">
+            <i class="iconfont icon-search"></i>
+            <div class="search_result"></div>
+        </form>
+    </h2>
+</div>
+<style>
+    body {
+        overflow: hidden;
+    }
+    .g-banner {
+        min-height: calc(100vh - 81px);
+    }
+    @media screen and (max-width: 695px){
+        .g-banner {
+            min-height: calc(100vh - 101px);
+        }
+    }
+</style>
+
+{% include footer.html %}

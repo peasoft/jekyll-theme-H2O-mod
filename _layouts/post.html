@@ -40,6 +40,9 @@
     <article class="markdown-body">
       {{ page.content }}
     </article>
+    <p class="markdown-body" style="margin-top: -20px;">
+      <small id="copyright">{{ site.copyright | replace: "\n", "<br>" }}</small>
+    </p>
 
     {% if site.social-share %}
     <div class="social-share-wrapper">

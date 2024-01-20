@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 3.8.5'
+gem 'jekyll', '~> 4.0'
 
 group :jekyll_plugins do
   gem 'jekyll-coffeescript'
@@ -12,4 +12,9 @@ group :jekyll_plugins do
   gem 'jekyll-readme-index'
   gem 'jekyll-titles-from-headings'
   gem 'jekyll-relative-links'
+end
+
+group :dev, optional: true do
+  # bundle config set with 'dev'
+  gem "webrick", "~> 1.8"
 end

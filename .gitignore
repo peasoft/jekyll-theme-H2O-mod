@@ -1,5 +1,9 @@
 .DS_Store
 */.DS_Store
 package-lock.json
+*.lock
 node_modules
+.bundle
+_posts
 _site
+.jekyll-cache

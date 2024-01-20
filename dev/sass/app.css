@@ -493,6 +493,11 @@ a {
   transition: 0.2s;
   z-index: 1;
 }
+@media screen and (max-width: 500px) {
+  .search-card .icon-search {
+    top: 4px;
+  }
+}
 .search-card .search_result {
   position: relative;
   margin-top: -2px;
@@ -915,6 +920,23 @@ a {
   color: #000;
 }
 
+.info-content {
+  padding: 30px 20px;
+  background-color: #fff;
+  border: 1px solid #E7EAF1;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 37, 55, 0.06);
+  margin: -60px auto 0;
+  padding-top: 40px;
+  margin-bottom: 12px;
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+.info-content .markdown-body {
+  padding: 0;
+}
+
 .np-banner {
   position: fixed;
   top: 0;
@@ -958,7 +980,7 @@ a {
 }
 .night-mode .article-item, .night-mode .g-sidebar, .night-mode .page-links, .night-mode .search-card input, .night-mode .search_result,
 .night-mode .search_item, .night-mode .article-item .post-tag, .night-mode .tags-card .tag, .night-mode .tags-list li,
-.night-mode .tags-list .tag {
+.night-mode .tags-list .tag, .night-mode .info {
   color: #868A94;
   background-color: #2D313A;
   border-color: rgba(255, 255, 255, 0.1);
@@ -1053,6 +1075,17 @@ a {
 }
 .night-mode .token.keyword {
   color: #61BDCF;
+}
+
+.no-transition * {
+  transition: none !important;
+}
+
+#copyright {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  opacity: 80%;
 }
 
 @media screen and (min-width: 1920px) {

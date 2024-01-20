@@ -2,5 +2,10 @@
     "search.exclude": {
         "assets/": true,
         "dev/sass/*.css": true
+    },
+    "files.associations": {
+        "*.html": "liquid",
+        "*.xml": "liquid",
+        "search.json": "liquid"
     }
 }
